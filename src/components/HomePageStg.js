@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 const HomePageStg = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1680px] max-w-full flex flex-col items-end justify-start pt-0 px-0 pb-[0.3px] box-border leading-[normal] tracking-[normal] ${className}`}
+      className={`w-[1680px] max-w-full flex flex-col items-center justify-start ${className}`}
     >
       <Hero />
       <BackgroundStory />

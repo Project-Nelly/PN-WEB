@@ -17,24 +17,19 @@ const Card = ({
 
   return (
     <div
-      className={`flex flex-col items-start justify-start gap-[18.6px] max-w-full text-left text-4xl-3 text-gray-200 font-proxima-nova ${className}`}
+      className={`flex flex-col items-start justify-start gap-[18.6px] text-left text-4xl-3 text-gray-200 font-proxima-nova ${className}`}
     >
       <img
-        className="self-stretch h-[349.7px] relative rounded-[13.99px] max-w-full overflow-hidden shrink-0 object-cover"
+        className="w-[466.2px] relative rounded-[13.99px] h-[349.7px] overflow-hidden shrink-0 object-cover"
         alt=""
         src={img}
       />
-      <div className="self-stretch flex flex-col items-start justify-start gap-[14px] shrink-0">
-        <div
-          className="self-stretch relative mq450:text-lgi"
-          style={nellyAndLeeStyle}
-        >
+      <div className="self-stretch flex flex-col items-start justify-start gap-[14px]">
+        <div className="self-stretch relative" style={nellyAndLeeStyle}>
           {nellyAndLeeWanLikLaunchPr}
         </div>
         <div className="rounded-[115.39px] flex flex-row items-center justify-center text-2xl">
-          <b className="relative leading-[37.3px] font-bold mq450:text-mid mq450:leading-[30px]">
-            Read More
-          </b>
+          <b className="relative leading-[37.3px]">Read More</b>
         </div>
       </div>
     </div>

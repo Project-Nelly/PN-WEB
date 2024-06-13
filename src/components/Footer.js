@@ -2,64 +2,56 @@ import PropTypes from "prop-types";
 
 const Footer = ({ className = "" }) => {
   return (
-    <section
-      className={`self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start pt-[117.7px] px-[111px] pb-[117.4px] gap-[252.8px] shrink-0 text-left text-4xl-3 text-basic-white font-proxima-nova mq450:gap-[63px] mq450:pt-[50px] mq450:px-5 mq450:pb-[49px] mq450:box-border mq750:pt-[77px] mq750:pb-[76px] mq750:box-border mq1050:gap-[126px] mq1050:pl-[55px] mq1050:pr-[55px] mq1050:box-border ${className}`}
+    <div
+      className={`self-stretch relative bg-gray-100 h-[765.8px] overflow-hidden shrink-0 text-left text-4xl-3 text-basic-white font-proxima-nova ${className}`}
     >
-      <div className="self-stretch flex flex-row items-start justify-center py-0 pr-0 pl-[673px] mq750:pl-[168px] mq750:box-border mq1050:pl-[336px] mq1050:box-border">
-        <div className="w-[306.5px] flex flex-row items-start justify-between gap-[20px]">
-          <div className="w-[155px] flex flex-col items-start justify-start gap-[28px]">
-            <div className="self-stretch h-7 relative inline-block z-[1] mq450:text-lgi">
-              Home
-            </div>
-            <div className="self-stretch h-7 relative inline-block z-[1] mq450:text-lgi">
-              About
-            </div>
-            <div className="self-stretch relative z-[1] mq450:text-lgi">
-              Project
-            </div>
-            <div className="self-stretch h-7 relative inline-block z-[1] mq450:text-lgi">
-              Collaboration
-            </div>
-            <div className="self-stretch h-7 relative inline-block z-[1] mq450:text-lgi">
-              News
-            </div>
-          </div>
-          <div className="flex flex-col items-start justify-start pt-[2.3px] px-0 pb-0">
-            <div className="flex flex-row items-start justify-start gap-[18.7px]">
-              <img
-                className="h-[23.3px] w-[23.3px] relative overflow-hidden shrink-0 min-h-[23px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/remixiconsfilllogosfacebookboxfill.svg"
-              />
-              <img
-                className="h-[23.3px] w-[23.3px] relative overflow-hidden shrink-0 min-h-[23px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/remixiconslinelogosinstagramline.svg"
-              />
-            </div>
-          </div>
+      <img
+        className="absolute h-[159.14%] w-full top-[13.54%] right-[-11.95%] bottom-[-72.68%] left-[11.95%] max-w-full overflow-hidden max-h-full object-cover"
+        alt=""
+        src="/image-4@2x.png"
+      />
+      <img
+        className="absolute h-[62.71%] w-[40.42%] top-[16.9%] right-[52.92%] bottom-[20.4%] left-[6.67%] max-w-full overflow-hidden max-h-full"
+        alt=""
+        src="/group-51.svg"
+      />
+      <div className="absolute top-[calc(50%_-_279.2px)] left-[calc(50%_+_170.4px)] w-[183px] flex flex-col items-start justify-start">
+        <div className="self-stretch flex flex-row items-center justify-center p-3.5">
+          <div className="flex-1 relative">Home</div>
+        </div>
+        <div className="self-stretch flex flex-row items-center justify-center p-3.5">
+          <div className="flex-1 relative">About</div>
+        </div>
+        <div className="self-stretch flex flex-row items-center justify-center p-3.5">
+          <div className="flex-1 relative">Project</div>
+        </div>
+        <div className="self-stretch flex flex-row items-center justify-center p-3.5">
+          <div className="flex-1 relative">Collaboration</div>
+        </div>
+        <div className="self-stretch flex flex-row items-center justify-center p-3.5">
+          <div className="flex-1 relative">News</div>
         </div>
       </div>
-      <div className="w-[128.2px] flex flex-row items-start justify-start relative text-2xl">
-        <div className="h-[662.4px] w-[1567.3px] absolute !m-[0] top-[-518.7px] right-[-1439.1px]">
+      <div className="absolute bottom-[117.4px] left-[111.9px] text-2xl inline-block w-[128.2px]">
+        © 2024
+      </div>
+      <div className="absolute top-[calc(50%_-_272.2px)] left-[calc(50%_+_416.3px)] flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-center p-[9.3px]">
           <img
-            className="absolute top-[0px] left-[88.6px] w-[1678.4px] h-[1218.7px] object-cover"
+            className="w-[23.3px] relative h-[23.3px] overflow-hidden shrink-0"
             alt=""
-            src="/image-41@2x.png"
-          />
-          <img
-            className="absolute top-[25.6px] left-[0px] w-[678.3px] h-[480.2px] z-[1]"
-            alt=""
-            src="/group-51.svg"
+            src="/remixiconsfilllogosfacebookboxfill.svg"
           />
         </div>
-        <div className="h-[26px] flex-1 relative inline-block shrink-0 mq450:text-mid">
-          © 2024
+        <div className="flex flex-row items-center justify-center p-[9.3px]">
+          <img
+            className="w-[23.3px] relative h-[23.3px] overflow-hidden shrink-0"
+            alt=""
+            src="/remixiconslinelogosinstagramline.svg"
+          />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

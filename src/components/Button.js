@@ -22,24 +22,19 @@ const Button = ({
   }, [propColor]);
 
   return (
-    <button
-      className={`cursor-pointer py-[17px] pr-[31px] pl-[37px] bg-[transparent] rounded-[115.39px] flex flex-row items-start justify-start gap-[9.3px] z-[2] border-[1.2px] border-solid border-basic-white ${className}`}
+    <div
+      className={`absolute top-[calc(50%_-_65.5px)] right-[283.1px] rounded-[115.39px] flex flex-row items-center justify-center py-[18.6px] pr-[32.6px] pl-[37.3px] gap-[9.3px] text-left text-2xl text-basic-white font-proxima-nova border-[1.2px] border-solid border-basic-white ${className}`}
       style={buttonStyle}
     >
-      <div className="flex flex-col items-start justify-start pt-[7px] px-0 pb-0">
-        <b
-          className="h-3.5 relative text-2xl leading-[37.3px] font-bold font-proxima-nova text-basic-white text-left inline-block mq450:text-mid mq450:leading-[30px]"
-          style={collaborationStyle}
-        >
-          Collaboration
-        </b>
-      </div>
+      <b className="relative leading-[37.3px]" style={collaborationStyle}>
+        Collaboration
+      </b>
       <img
-        className="h-7 w-7 relative overflow-hidden shrink-0"
+        className="w-7 relative h-7 overflow-hidden shrink-0"
         alt=""
         src={mdiarrowRight}
       />
-    </button>
+    </div>
   );
 };
 
